@@ -18,7 +18,7 @@ process.stdin.on('readable', function() {
 				process.stdout.write('\nNode.js Version\n')
 				process.stdout.write(process.version);
 				process.stdout.write('\n\nOS Version\n');
-				process.stdout.write(process.env.OS);
+				process.stdout.write(String(process.env.OS));
 				break;
 			default:
 				process.stderr.write('Wrong instruction!\n');
